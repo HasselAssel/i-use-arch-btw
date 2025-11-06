@@ -9,10 +9,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+int LANGUAGE = 0;
+
 void print_help(FILE *file, const char *argv0) {
     fprintf(
         file,
-        "Usage: %s [options] <source file>\n"
+        "Usage: %s [options] <source file> [language]\n"
         "\n"
         "Options:\n"
         "  -h  Display this help information then exit.\n"
@@ -68,6 +70,10 @@ int main(int argc, char *argv[]) {
     if (opts.version) {
         print_version();
         return EXIT_SUCCESS;
+    }
+
+    if (argc >= 3) {
+        LANGUAGE = argv[2];
     }
 
     return compile_and_run(argv[1]);
