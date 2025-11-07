@@ -22,6 +22,7 @@ void print_help(FILE *file, const char *argv0) {
         "  -V  Display version information then exit.\n",
         "\n\n",
         "Languages:\n",
+        "  EN (default)",
         "  DE",
         argv0
     );
