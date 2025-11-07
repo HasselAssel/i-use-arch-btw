@@ -53,7 +53,6 @@ int options_init(struct options *opts, int argc, char *argv[]) {
 void set_language(char* lang) {
     if (strcmp(lang, "DE") == 0) {
         LANGUAGE = 1;
-        return;
     }
 }
 

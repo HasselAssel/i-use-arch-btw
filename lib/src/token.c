@@ -12,7 +12,7 @@ const char *iuab_token_type_name(enum iuab_token_type type) {
                 case IUAB_TOKEN_USE: return "benutze";
                 case IUAB_TOKEN_ARCH: return "bogen";
                 case IUAB_TOKEN_LINUX: return "linux";
-                case IUAB_TOKEN_BTW: return "übrigens";
+                case IUAB_TOKEN_BTW: return "uebrigens";
                 case IUAB_TOKEN_BY: return "bei";
                 case IUAB_TOKEN_THE: return "dem";
                 case IUAB_TOKEN_WAY: return "weg";
