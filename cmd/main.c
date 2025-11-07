@@ -20,6 +20,9 @@ void print_help(FILE *file, const char *argv0) {
         "Options:\n"
         "  -h  Display this help information then exit.\n"
         "  -V  Display version information then exit.\n",
+        "\n\n",
+        "Languages:\n",
+        "  DE",
         argv0
     );
 }
