@@ -19,10 +19,10 @@ void print_help(FILE *file, const char *argv0) {
         "\n"
         "Options:\n"
         "  -h  Display this help information then exit.\n"
-        "  -V  Display version information then exit.\n",
-        "\n\n",
-        "Languages:\n",
-        "  EN (default)",
+        "  -V  Display version information then exit.\n"
+        "\n\n"
+        "Languages:\n"
+        "  EN (default)"
         "  DE",
         argv0
     );
