@@ -95,7 +95,7 @@ iuab_lexer_next_token_type(struct iuab_lexer *lexer, int ch) {
                 case 'w': return IUAB_LEXER_MATCH_TOKEN(lexer, "eg", IUAB_TOKEN_WAY);
                 case 'l': return IUAB_LEXER_MATCH_TOKEN(lexer, "inux", IUAB_TOKEN_LINUX);
                 
-                case 'ü': return IUAB_LEXER_MATCH_TOKEN(lexer, "brigens", IUAB_TOKEN_BTW);
+                case 'u': return IUAB_LEXER_MATCH_TOKEN(lexer, "ebrigens", IUAB_TOKEN_BTW);
                 case 'g': return IUAB_LEXER_MATCH_TOKEN(lexer, "entoo", IUAB_TOKEN_GENTOO);
                 default: return IUAB_TOKEN_INVALID;
             }

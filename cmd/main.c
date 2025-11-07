@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 int LANGUAGE = 0;
 
@@ -49,6 +50,13 @@ int options_init(struct options *opts, int argc, char *argv[]) {
     return EXIT_SUCCESS;
 }
 
+void set_language(char* lang) {
+    if (strcmp(lang, "DE") == 0) {
+        LANGUAGE = 1;
+        return;
+    }
+}
+
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         print_help(stderr, argv[0]);
@@ -73,7 +81,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (argc >= 3) {
-        LANGUAGE = argv[2];
+        set_language(argv[2]);
     }
 
     return compile_and_run(argv[1]);
